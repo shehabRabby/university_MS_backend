@@ -15,8 +15,11 @@
     "format": "biome format --write .",
     "format:check": "biome format .",
     "test": "prisma generate && vitest run",
+    "test:run": "npm run test",
     "prisma:generate": "prisma generate",
-    "prisma:validate": "prisma validate"
+    "prisma:validate": "prisma validate",
+    "db:generate": "npm run prisma:generate",
+    "db:validate": "npm run prisma:validate"
   },
   "dependencies": {
     "@prisma/adapter-pg": "7.10.0",
